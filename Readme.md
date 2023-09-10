@@ -46,10 +46,10 @@ To run the Contact Management Application locally, follow these steps:
    npm install
    ```
 
-4. Create a `.env` file in the backend directory and specify your MongoDB connection URL (if using MongoDB) and a secret key for JWT (if implementing authentication).
+4. Create a `.env` file in the backend directory and specify your MongoDB connection URL create  .env file on the Backend folder root directory copy and paste it into into env file.
 
    ```env
-   mongourel=mongodb+srv://adesh:adeshtayde@cluster0.tebj3jv.mongodb.net/ContactProject?retryWrites=true&w=majority
+   mongourel=<Your MongoDB Atlas url>
    port=5000
    ```
 
@@ -81,6 +81,7 @@ The backend server should now be running on http://localhost:5000.
    npm run dev
    ```
 
+The frontend server should now be running on http://127.0.0.1:5173/.
 ## Folder Structure
 
 ```
@@ -92,7 +93,7 @@ contact-management-app/
 │   ├── config.js             # Configuration file
 │   ├── server.js             # Express server setup
 │   └── ...
-├── Client/Frontend/                # React frontend
+├── Client/Frontend/                # ReactVite frontend
 │   ├── public/               # Public assets
 │   ├── src/
 │   │   ├── components/       # React components
@@ -107,6 +108,7 @@ contact-management-app/
 └── ...
 ```
 
+
 ## API Endpoints
 
 - GET `/api/contacts`: Retrieve all contacts.
@@ -114,8 +116,16 @@ contact-management-app/
 - POST `/api/contacts`: Create a new contact.
 - PUT `/api/contacts/:id`: Update an existing contact.
 - DELETE `/api/contacts/:id`: Delete a contact.
-- Search `api/contacts/search?name=`: Search by name
-## Screenshots
+- Search `api/contacts/search?name=`: Search by name,email,number
+
+## Deployed Application
+
+You can access the deployed Contact Management Application using the following link:
+
+[Deployed link](https://contact-managmentadesh.netlify.app/)
+
+Feel free to explore and use the application.
+
 
 
 
