@@ -10,7 +10,6 @@ function formatDate(date) {
  }
 class ContactController{
    static async getAllContacts(req,res){
-     const sort = req.query.sort
         try {
          let  Contacts = await ContactModel.find()
                
@@ -38,7 +37,6 @@ class ContactController{
    }
    static async createContact(req,res){
       try {
-         console.log(req.body)
          const AddContact = new ContactModel(req.body)
          await AddContact.save()
          res.status(200).send({"message":"Contact has been added"})
@@ -73,13 +71,15 @@ class ContactController{
    }
    static async serachbyname(req, res) {
       try {
-        const {name,sort} = req.query;
+        const {name} = req.query;
        
         // Perform a case-insensitive search for contacts by first or last name
         const results = await ContactModel.find({
          $or: [
            { firstName: { $regex: name, $options: 'i' } }, // Search by first name
            { lastName: { $regex: name, $options: 'i' } }, // Search by last name
+           { email: { $regex: name, $options: 'i' } }, // Search by last name
+           { phoneNumber: { $regex: name} }, // Search by last name
            {
              $expr: {
                $regexMatch: {
