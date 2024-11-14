@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Contact.css';
 import profile from '../Images/profile.png';
-import EditForm from './EditForm'; // Import the EditForm component
+import EditForm from './EditForm'; 
 import CreateForm from './CreateContact';
 import { baseurl } from './Api';
 const DataTable = () => {
