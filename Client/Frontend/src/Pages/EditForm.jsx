@@ -18,8 +18,10 @@ const EditForm = ({ contactData, onClose, onSave }) => {
     // onClose();
   };
 
-  useEffect(() => {
-    fetch("https://countrynamewithphonecode.onrender.com/")
+
+
+   useEffect(() => {
+    fetch("/ContryCode.json")
       .then((res) => res.json())
       .then((data) => {
         setCountries(data);

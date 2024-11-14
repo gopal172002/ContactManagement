@@ -116,8 +116,6 @@ const DataTable = () => {
     // Handle network or other errors
     console.error('Error deleting contact:', error);
   }
-
-  
  }
 
 
@@ -174,13 +172,6 @@ return (
     </div>
     <div className="container">
       <div className="search-bar">
-        <input
-          className="search-input"
-          type="search"
-          placeholder="Search Contacts..."
-          onChange={(e) => setsearchTerm(e.target.value)}
-          value={searchTerm}
-        />
         <button className="button" onClick={openCreateForm}>Create Contact</button>
         <button className="button sorting-button" onClick={toggleSortOrder}>
           Sort {isAscending ? '⬆ A-Z' : '⬇ Z-A'}
@@ -193,7 +184,6 @@ return (
             <th className="highlight">Name</th>
             <th className="highlight">Email</th>
             <th className="highlight">Mobile Number</th>
-            <th className="highlight">Created Date</th>
             <th className="highlight">Edit Contact</th>
             <th className="highlight">Delete Contact</th>
           </tr>
@@ -211,7 +201,6 @@ return (
               </td>
               <td>{item.email}</td>
               <td>{item.code} {item.phoneNumber}</td>
-              <td>{item.createDate}</td>
               <td>
                 <button className="update-button" onClick={() => openEditForm(item)}>
                   Edit

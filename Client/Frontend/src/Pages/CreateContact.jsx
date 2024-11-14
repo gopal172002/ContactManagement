@@ -1,5 +1,5 @@
 import React, { useState ,useEffect} from "react";
-import "./CreateForm.css"; // Create a corresponding CSS file for styling
+import "./CreateForm.css"; 
 
 const CreateForm = ({ onClose, onCreate }) => {
   const [formData, setFormData] = useState({
@@ -13,7 +13,7 @@ const CreateForm = ({ onClose, onCreate }) => {
   const [countries, setCountries] = useState([]);
   const [Countrycode, setCountryCode] = useState("");
   useEffect(() => {
-    fetch("https://countrynamewithphonecode.onrender.com/")
+    fetch("/ContryCode.json")
       .then((res) => res.json())
       .then((data) => {
         setCountries(data);

@@ -1,6 +1,6 @@
 # Contact Management Application
 
-This Contact Management application is built using the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to manage their contacts by adding, viewing, editing, and deleting contact information. The application also includes search and sorting functionality to enhance the user experience.
+This Contact Management application is built using the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to manage their contacts by adding, viewing, editing, and deleting contact information.
 
 
 ## Features
@@ -9,8 +9,6 @@ This Contact Management application is built using the MERN (MongoDB, Express.js
 - Add new contacts with fields for name, phone number, and email address.
 - Edit existing contacts.
 - Delete contacts.
-- Search for contacts by name.
-- Sort contacts by name or other relevant criteria.
 
 ## Technologies Used
 
@@ -31,7 +29,7 @@ To run the Contact Management Application locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Adesh856/Contact_Managment_App.git
+   git clone URL
    ```
 
 2. Navigate to the backend directory:
@@ -122,13 +120,6 @@ contact-management-app/
 
 You can access the deployed Contact Management Application using the following link:
 
-[Deployed link](https://contact-managmentadesh.netlify.app/)
-
 Feel free to explore and use the application.
-
-## ScreenShots 
-
-<img src="./Client/Frontend/src/Images/Screenshot 2023-09-10 174841.png"></img>
-
 
 

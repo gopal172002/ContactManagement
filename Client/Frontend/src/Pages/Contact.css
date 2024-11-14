@@ -14,7 +14,7 @@ body {
 
 /* Header styles */
 .header {
-  background-color: #007bff;
+  background-color: #555354;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -97,4 +97,3 @@ body {
   border: none;
   border-radius: 4px;
 }
-/* Add other styles as needed for alignment and spacing */

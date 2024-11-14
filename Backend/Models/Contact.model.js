@@ -26,7 +26,6 @@ const ContactSchema = mongoose.Schema({
         type:Date,
         default: Date.now,
         get: function () {
-            // Format the date as "dd-mm-yyyy"
             const date = new Date(this._doc.createDate);
             const day = date.getDate().toString().padStart(2, '0');
             const month = (date.getMonth() + 1).toString().padStart(2, '0');

@@ -22,7 +22,7 @@ class ContactController{
                  phoneNumber: contact.phoneNumber,
                  email: contact.email,
                  createDate: formatDate(contact.createDate),
-                 code:contact.code // Format date here
+                 code:contact.code 
                };
              });
   
@@ -73,7 +73,6 @@ class ContactController{
       try {
         const {name} = req.query;
        
-        // Perform a case-insensitive search for contacts by first or last name
         const results = await ContactModel.find({
          $or: [
            { firstName: { $regex: name, $options: 'i' } }, // Search by first name
@@ -101,7 +100,7 @@ class ContactController{
            phoneNumber: contact.phoneNumber,
            email: contact.email,
            createDate: formatDate(contact.createDate),
-           code:contact.code // Format date here
+           code:contact.code
          };
        });
 
