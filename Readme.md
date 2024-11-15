@@ -114,7 +114,6 @@ contact-management-app/
 - POST `/api/contacts`: Create a new contact.
 - PUT `/api/contacts/:id`: Update an existing contact.
 - DELETE `/api/contacts/:id`: Delete a contact.
-- Search `api/contacts/search?name=`: Search by name,email,number
 
 ## Deployed Application
 
